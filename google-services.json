@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "526867880683",
+    "firebase_url": "####################", //insert your firebase_url
+    "project_id": "###############",  //insert your project_id
+    "storage_bucket": "###################"  //insert your storage_bucket
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "#########################", //insert your mobilesdk_app_id
+        "android_client_info": {
+          "package_name": "com.example.musicnet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "##################",  //insert your client_id
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "##################################"  //insert your current_key
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "################",  //insert your client_id
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABOUT"
+        android:textSize="50dp"
+        android:fontFamily="sans-serif-black"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/cardview_dark_background"/>
+    <TextView
+        android:layout_below="@id/text"
+        android:layout_above="@+id/butt"
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:background="#CF0F0F00"
+        android:textColor="@color/cardview_light_background"
+        android:text="\nJava package by\n\nRashmi Kanakaraj(17pd28)\nand
+        \nJoel Antony Xaviour (17PD09)"/>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/butt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go back to player"/>
+</RelativeLayout>

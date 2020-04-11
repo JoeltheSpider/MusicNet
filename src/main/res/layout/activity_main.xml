@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round">
+        <ImageView
+            android:id="@+id/icon"
+            android:src="@drawable/msicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/ms"
+            android:layout_width="250dp"
+            android:layout_toRightOf="@id/icon"
+            android:text="Ms.Network"
+            android:textSize="38dp"
+            android:fontFamily="sans-serif-black"
+            android:shadowColor="#FF909090"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/action_shuffle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:onClick="shuffle"
+            android:src="@drawable/shuffle"
+            android:layout_toRightOf="@id/ms"
+            android:title="Shuffle"
+            app:showAsAction="always" />
+
+        <ImageButton
+            android:id="@+id/action_end"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/action_shuffle"
+            android:clickable="true"
+            android:onClick="stop"
+            android:src="@drawable/stop"
+            android:title="End"
+            app:showAsAction="always" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/song_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF9F9F9"
+            android:layout_above="@id/playing">
+        </ListView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/playing"
+            android:layout_above="@+id/local"/>
+        <Button
+            android:id="@+id/local"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:text="Local Server"
+            android:onClick="makeSwitch"/>
+    </RelativeLayout>
+</LinearLayout>
